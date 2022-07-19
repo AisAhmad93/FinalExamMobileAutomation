@@ -1,0 +1,9 @@
+usernameInput_loginpage : com.example.myapplication:id/username
+passwordInput_loginpage : com.example.myapplication:id/password
+signinbutton_loginpage : com.example.myapplication:id/signIn
+VerifyTextEmail : com.example.myapplication:id/textView2
+VerifyNameAccount : com.example.myapplication:id/textView
+CekIn : com.example.myapplication:id/button6
+
+
+

@@ -1,0 +1,26 @@
+Buttonbook : com.example.myapplication:id/book
+VerifyToolBar : com.example.myapplication:id/toolbar
+OneWay : //android.support.v7.app.ActionBar.Tab[@content-desc="One Way"]
+ButtonLoginHome : com.example.myapplication:id/login
+InputUsername : com.example.myapplication:id/username
+InputPassword : com.example.myapplication:id/password
+ButtonSignin : com.example.myapplication:id/signIn
+VerifyAccountName : com.example.myapplication:id/textView
+VerifyFormBooking : com.example.myapplication:id/textView3
+Chicago : com.example.myapplication:id/spinnerFrom
+Chicago2 : /hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[@text='Chicago']
+Paris : /hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[@text='Paris']
+ClickButtonClass : com.example.myapplication:id/spinnerClass
+First : /hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[2]
+Start8August : //android.view.View[@content-desc="08 August 2019"]
+ButtonOkCalendar : android:id/button1
+TapStart : com.example.myapplication:id/textStartDate
+TapEnd : com.example.myapplication:id/textEndDate
+End8August : //android.view.View[@content-desc="08 August 2019"]
+Hotel : com.example.myapplication:id/radioButtonFlightHotel
+ButtonBook : /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.Button
+VerifyTextCity : com.example.myapplication:id/textView7
+CheckBox : com.example.myapplication:id/checkBoxDay
+VerifyOrder : com.example.myapplication:id/imageView5
+ButtonConfrim : com.example.myapplication:id/confirm_order
+NoOrder : com.example.myapplication:id/checkedTextView

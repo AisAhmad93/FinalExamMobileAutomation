@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220718 22:50:15.269" rpa="false" schemaversion="3">
+<suite id="s1" name="Search" source="C:\Users\Indodana Admin\MobileAuto\suites\Search.robot">
+<kw name="Open Flight Application" library="base" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>newCommandTimeout=2500</arg>
+<arg>appActivity=${ACTIVITY_NAME}</arg>
+<arg>appPackage=${PACKAGE_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220718 22:50:15.478" endtime="20220718 22:50:25.183"/>
+</kw>
+<status status="PASS" starttime="20220718 22:50:15.477" endtime="20220718 22:50:25.183"/>
+</kw>
+<test id="s1-t1" name="User Check Order" line="8">
+<kw name="Verify Home Login Appears" library="Search">
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${VerifyToolBar}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20220718 22:50:25.185" endtime="20220718 22:50:25.810"/>
+</kw>
+<status status="PASS" starttime="20220718 22:50:25.184" endtime="20220718 22:50:25.811"/>
+</kw>
+<kw name="User Click Button Login" library="Search">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ButtonLoginHome}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220718 22:50:25.815" level="INFO">Clicking element 'com.example.myapplication:id/login'.</msg>
+<status status="PASS" starttime="20220718 22:50:25.812" endtime="20220718 22:50:25.898"/>
+</kw>
+<status status="PASS" starttime="20220718 22:50:25.811" endtime="20220718 22:50:25.898"/>
+</kw>
+<kw name="User Verify Login Page" library="Search">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${InputUsername}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220718 22:50:25.899" endtime="20220718 22:50:27.800"/>
+</kw>
+<status status="PASS" starttime="20220718 22:50:25.899" endtime="20220718 22:50:27.801"/>
+</kw>
+<kw name="Input Username In Login Page" library="Search">
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${InputUsername}</arg>
+<arg>support@ngendigital.com</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220718 22:50:27.803" level="INFO">Typing text 'support@ngendigital.com' into text field 'com.example.myapplication:id/username'</msg>
+<status status="PASS" starttime="20220718 22:50:27.801" endtime="20220718 22:50:27.875"/>
+</kw>
+<status status="PASS" starttime="20220718 22:50:27.801" endtime="20220718 22:50:27.876"/>
+</kw>
+<kw name="Input Password In Login Page" library="Search">
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${InputPassword}</arg>
+<arg>abc123</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220718 22:50:27.879" level="INFO">Typing text 'abc123' into text field 'com.example.myapplication:id/password'</msg>
+<status status="PASS" starttime="20220718 22:50:27.877" endtime="20220718 22:50:28.421"/>
+</kw>
+<status status="PASS" starttime="20220718 22:50:27.876" endtime="20220718 22:50:28.421"/>
+</kw>
+<kw name="User Click Button Sign" library="Search">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ButtonSignin}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220718 22:50:28.423" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
+<status status="PASS" starttime="20220718 22:50:28.422" endtime="20220718 22:50:28.934"/>
+</kw>
+<status status="PASS" starttime="20220718 22:50:28.421" endtime="20220718 22:50:28.934"/>
+</kw>
+<kw name="Verify Form User" library="Search">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${VerifyAccountName}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220718 22:50:28.935" endtime="20220718 22:50:30.060"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${VerifyToolBar}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20220718 22:50:30.061" endtime="20220718 22:50:30.091"/>
+</kw>
+<status status="PASS" starttime="20220718 22:50:28.935" endtime="20220718 22:50:30.092"/>
+</kw>
+<kw name="Click Button Search" library="Search">
+<kw name="Tap" library="AppiumLibrary">
+<arg>${ButtonSearch}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220718 22:50:30.092" endtime="20220718 22:50:30.264"/>
+</kw>
+<status status="PASS" starttime="20220718 22:50:30.092" endtime="20220718 22:50:30.265"/>
+</kw>
+<kw name="Verify Search Page" library="Search">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${VerifyNumber}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220718 22:50:30.266" endtime="20220718 22:50:32.264"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${InputNumber}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20220718 22:50:32.264" endtime="20220718 22:50:32.303"/>
+</kw>
+<status status="PASS" starttime="20220718 22:50:30.265" endtime="20220718 22:50:32.303"/>
+</kw>
+<kw name="User Input Number Order" library="Search">
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${InputNumber}</arg>
+<arg>DA935</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220718 22:50:32.306" level="INFO">Typing text 'DA935' into text field 'com.example.myapplication:id/flight_number'</msg>
+<status status="PASS" starttime="20220718 22:50:32.304" endtime="20220718 22:50:32.372"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ConfrimedOrder}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220718 22:50:32.374" level="INFO">Clicking element 'com.example.myapplication:id/searchFlight'.</msg>
+<status status="PASS" starttime="20220718 22:50:32.372" endtime="20220718 22:50:32.936"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220718 22:50:35.938" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220718 22:50:32.936" endtime="20220718 22:50:35.938"/>
+</kw>
+<status status="PASS" starttime="20220718 22:50:32.304" endtime="20220718 22:50:35.938"/>
+</kw>
+<doc>the user checks the order that has been made</doc>
+<status status="PASS" starttime="20220718 22:50:25.183" endtime="20220718 22:50:35.940"/>
+</test>
+<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20220718 22:50:35.944" endtime="20220718 22:50:36.410"/>
+</kw>
+<status status="PASS" starttime="20220718 22:50:15.272" endtime="20220718 22:50:36.410"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Search">Search</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

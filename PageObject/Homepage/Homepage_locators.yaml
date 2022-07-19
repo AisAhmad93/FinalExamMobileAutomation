@@ -1,0 +1,6 @@
+logo_homepage: com.example.myapplication:id/toolbar
+footer: com.example.myapplication:id/imageView
+loginbutton_homepage: com.example.myapplication:id/login
+
+username_homepage: com.example.myapplication:id/signIn
+
